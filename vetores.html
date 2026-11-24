@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minha Agenda</title>
+</head>
+<body>
+    <h1> Minha Agenda </h1>
+    
+    <script>
+        let minhaAgenda = ["\n 08h - Estudar \n", " 07h - Tomar Café \n", " 21h - Dormir \n", " 15h - Treinar \n", " 19h - Curso \n", " 16h - Fazer Tarefa \n", " 10h - Cinema \n"];
+        console.log(`Suas tarefas são ${minhaAgenda}`);
+
+        minhaAgenda.length
+        console.log(`Você tem ${minhaAgenda.length} tarefas pendentes.`);
+
+        minhaAgenda.push(" 13h - Visitar vó \n");
+        console.log(`Tarefa adicionada ${minhaAgenda}`);
+
+        minhaAgenda.sort();
+        console.log(`Tarefas organizadas ${minhaAgenda}`);
+
+        minhaAgenda.shift();
+        console.log(`Novas agenda ${minhaAgenda}`);
+
+        minhaAgenda.pop();
+        console.log(`Novas agenda ${minhaAgenda}`);
+
+        minhaAgenda.splice(4,1);
+        console.log(`Nova agenda ${minhaAgenda}`);
+
+    </script>
+</body>
+</html>
